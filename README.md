@@ -5,7 +5,12 @@ This is my terminal setup on a Mac. I prefer having the background slightly see 
 
 ![terminal image](imgs/cmdln.png)
 
-```
-hello world
+Open **Terminal/Preferences** and add a new profile.
 
+![terminal image](imgs/MineDefault.png)
+
+Then add the **.profile** to home directory in order to use settings for **username:folder prompt** and file type coloring.
+
+```
+cp .profile ~/.
 ```
