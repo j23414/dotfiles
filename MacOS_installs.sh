@@ -27,3 +27,11 @@ brew install parallel      # enable multi-threaded bash scripts
 # BasicTex    https://tug.org/mactex/morepackages.html
 # Atom        https://atom.io/
 # Scrivener   https://www.literatureandlatte.com/store/scrivener?tab=macOS  (paid license)
+
+# TASSEL 2020/10/15
+cd ~/bin/src
+[[ -d tassel-5-standalone ]] || git clone https://bitbucket.org/tasseladmin/tassel-5-standalone.git
+# Create a tassel bash file in bin
+# #! /usr/bin/env bash
+# ~/bin/src/tassel-5-standalone/run_pipeline.pl "$@"
+# USAGE: tassel [rest of run_pipeline arguments]
