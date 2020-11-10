@@ -35,8 +35,8 @@ Okay, and since they each place python packages in different places. It's prefer
 
 And list all requirements for a package in an `environment.yml` file:
 
-  ```
-  name: pyenv
+  ```yaml
+  name: python_env
   channels:
     - conda-forge
     - bioconda
@@ -46,25 +46,25 @@ And list all requirements for a package in an `environment.yml` file:
     - smof
     - jupyter
   ```
-  
+
   ### Choosing Miniconda
-  
+
   From a `environment.yml` specifying environment name, channel, and python packages; can create a miniconda environment.
-  
-  ```
+
+  ```bash
   conda env create -f environment.yml
   ```
-  
+
   The environment can be updated by adding new packages to the `environment.yml` file and using
-  
-  ```
+
+  ```bash
   conda env update -f environment.yml --prune
   ```
-  
+
   To start and stop a miniconda environment, use activate and deactivate
-  
-  ```
+
+  ```bash
   conda activate env_name
   conda deactivate
   ```
-  
+
