@@ -1,0 +1,10 @@
+export PS1='%F{yellow}%1~%f %# '
+export CLICOLOR=1;
+export LSCOLORS=GxFxCxDxBxegedabagaced;
+
+alias ls='ls -h';
+alias vscode='open -a Visual\ Studio\ Code'
+
+export LD_BIND_NOW=1
+
+
